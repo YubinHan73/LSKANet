@@ -1,0 +1,75 @@
+{
+    "classes": [{
+            "name": "background-tissue",
+            "active": true,
+            "color": [0, 0, 0, 128],
+            "classid": 0
+        },
+        {
+            "name": "instrument-shaft",
+            "active": true,
+            "color": [0, 255, 0, 128],
+            "classid": 1
+        },
+        {
+            "name": "instrument-clasper",
+            "active": true,
+            "color": [0, 255, 255, 128],
+            "classid": 2
+        },
+        {
+            "name": "instrument-wrist",
+            "active": true,
+            "color": [125, 255, 12, 128],
+            "classid": 3
+        },
+        {
+            "name": "kidney-parenchyma",
+            "active": true,
+            "color": [255, 55, 0, 128],
+            "classid": 4
+        },
+        {
+            "name": "covered-kidney",
+            "active": true,
+            "color": [24, 55, 125, 128],
+            "classid": 5
+        },
+	{
+            "name": "thread",
+            "active": true,
+            "color": [187, 155, 25, 128],
+            "classid": 6
+        },
+	{
+            "name": "clamps",
+            "active": true,
+            "color": [0, 255, 125, 128],
+            "classid": 7
+        },
+	{
+            "name": "suturing-needle",
+            "active": true,
+            "color": [255, 255, 125, 128],
+            "classid": 8
+	},
+	{
+            "name": "suction-instrument",
+            "active": true,
+            "color": [123, 15, 175, 128],
+            "classid": 9
+        },
+	{
+            "name": "intestine",
+            "active": true,
+            "color": [124, 155, 5, 128],
+            "classid": 10
+    },
+                {
+                    "name": "ultrasound-probe",
+                    "active": true,
+                    "color": [12, 255, 141, 128],
+                    "classid": 11
+                }
+    ]
+}
