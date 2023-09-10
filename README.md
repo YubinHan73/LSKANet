@@ -33,7 +33,7 @@ We used these packages/versions in the development of this project.
 * opencv-python 4.5.3
 ```
 ### Training process
-Before training, please download the dataset you need and rename them in the 'Cityscapes' way. Then copy the data adress in your code. The naming rules can be found in `mmseg/datasets/endovis2018.py` or `mmseg/datasets/cadis.py`.
+Before training, please download the dataset you need and rename them following `mmseg/datasets/endovis2018.py` and `mmseg/datasets/cadis.py`.
 1. Switch folder `cd ./tools/`
 2. Use `python train.py` to start the training
 3. Parameter setting and training script refer to `/work_dirs/0_LSKANet/LSKANet_XXXX.py`
