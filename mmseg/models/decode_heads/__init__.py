@@ -29,11 +29,8 @@ from .setr_up_head import SETRUPHead
 from .stdc_head import STDCHead
 from .uper_head import UPerHead
 from .ham_head import LightHamHead
-from .segformer_fu_head import SegformerFUHead
 from .boundary_head import BGHead
 from .affinity_head import AffinityFUHead
-from .boundary_head2 import BGHead2
-from .affinity_plain_head import AffinityFU_Plain_Head
 
 __all__ = [
     'FCNHead', 'PSPHead', 'ASPPHead', 'PSAHead', 'NLHead', 'GCHead', 'CCHead',
@@ -42,6 +39,6 @@ __all__ = [
     'PointHead', 'APCHead', 'DMHead', 'LRASPPHead', 'SETRUPHead',
     'SETRMLAHead', 'DPTHead', 'SETRMLAHead', 'SegmenterMaskTransformerHead',
     'SegformerHead', 'ISAHead', 'STDCHead', 'IterativeDecodeHead',
-    'KernelUpdateHead', 'KernelUpdator', 'LightHamHead', 'SegformerFUHead',
-    'BGHead', 'AffinityFUHead', 'BGHead2', 'AffinityFU_Plain_Head'
+    'KernelUpdateHead', 'KernelUpdator', 'LightHamHead',
+    'BGHead', 'AffinityFUHead'
 ]

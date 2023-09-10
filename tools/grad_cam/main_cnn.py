@@ -12,12 +12,12 @@ from mmengine.model import revert_sync_batchnorm
 
 
 def main():
-    config = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new.py'
-    checkpoint = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new/best_mIoU_epoch_108.pth'
-    # config = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_LSKA_cadist3.py'
-    # checkpoint = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_LSKA_cadist3/best_mIoU_epoch_100.pth'
+    config = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/work_dirs/0_LSKANet/LSKANet_cadist3.py'
+    checkpoint = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new/best_mIoU_epoch_108.pth'
+    # config = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/work_dirs/0_LSKANet/LSKANet_hr48_LSKA_cadist3.py'
+    # checkpoint = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/work_dirs/0_LSKANet/LSKANet_hr48_LSKA_cadist3/best_mIoU_epoch_100.pth'
     img_path = '/data2/hyb/DataSurgery/CaDIS_train3550_val534_test586_task3/leftImg8bit/test/Video22/Video22_frame019920_leftImg8bit.png'
-    save_path = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/cam_out_cadis/{}'.format(
+    save_path = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/cam_out_cadis/{}'.format(
         img_path.split('/')[-1].split('_')[1])
 
     if not os.path.exists(save_path):

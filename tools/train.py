@@ -24,16 +24,16 @@ from mmseg.utils import (collect_env, get_device, get_root_logger,
 def parse_args():
     parser = argparse.ArgumentParser(description='Train a segmentor')
     parser.add_argument('--config',
-                        default='/data2/hyb/SegNetwork_other/SegNeXt-main/'
-                                'tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist1_new.py',
+                        default='/data2/hyb/SegNetwork_other/LSKANet_main/'
+                                'tools/work_dirs/0_LSKANet/LSKANet_cadist1.py',
                         help='train config file path')
     parser.add_argument('--work-dir', help='the dir to save logs and models')
     parser.add_argument('--load-from',
-                        # default='/data2/hyb/SegNetwork_other/SegNeXt-main/'
+                        # default='/data2/hyb/SegNetwork_other/LSKANet_main/'
                         #         'tools/work_dirs/0_LSKANet/hr48_cadist3/best_mIoU_epoch_120.pth',
                         help='the checkpoint file to load weights from')
     parser.add_argument('--resume-from',
-                        # default='/data2/hyb/SegNetwork_other/SegNeXt-main/'
+                        # default='/data2/hyb/SegNetwork_other/LSKANet_main/'
                         #         'tools/work_dirs/deeplabv3+_mv2/deeplab_cadist3/best_mIoU_epoch_150.pth',
                         help='the checkpoint file to resume from')
     parser.add_argument(

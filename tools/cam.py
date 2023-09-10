@@ -73,8 +73,8 @@ if __name__ == '__main__':
          "gradcamelementwise": GradCAMElementWise}
 
     # model1 = models.resnet50(pretrained=True)
-    config = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new.py'
-    checkpoint = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new/best_mIoU_epoch_108.pth'
+    config = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/work_dirs/0_LSKANet/LSKANet_cadist3.py'
+    checkpoint = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new/best_mIoU_epoch_108.pth'
     model = init_segmentor(config, checkpoint, device='cpu')
     target_layers = [model.neck.dlka_block1]
 

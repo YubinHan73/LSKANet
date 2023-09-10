@@ -12,45 +12,19 @@ from .custom import CustomDataset
 
 @DATASETS.register_module()
 class TMEDataset(CustomDataset):
-    """Cityscapes dataset.
-
-    The ``img_suffix`` is fixed to '_leftImg8bit.png' and ``seg_map_suffix`` is
-    fixed to '_gtFine_labelTrainIds.png' for Cityscapes dataset.
     """
-
-    # CLASSES = ('road', 'sidewalk', 'building', 'wall', 'fence', 'pole',
-    #            'traffic light', 'traffic sign', 'vegetation', 'terrain', 'sky',
-    #            'person', 'rider', 'car', 'truck', 'bus', 'train', 'motorcycle',
-    #            'bicycle')
-    #
-    # PALETTE = [[128, 64, 128], [244, 35, 232], [70, 70, 70], [102, 102, 156],
-    #            [190, 153, 153], [153, 153, 153], [250, 170, 30], [220, 220, 0],
-    #            [107, 142, 35], [152, 251, 152], [70, 130, 180], [220, 20, 60],
-    #            [255, 0, 0], [0, 0, 142], [0, 0, 70], [0, 60, 100],
-    #            [0, 80, 100], [0, 0, 230], [119, 11, 32]]
-
-    """for endovis 2018"""
-    # CLASSES = ("background-tissue", "instrument-shaft", "instrument-clasper",
-    #            "instrument-wrist", "kidney-parenchyma", "covered-kidney", "thread",
-    #            "clamps", "suturing-needle", "suction-instrument", "small-intestine", "US probe")
-    #
-    # PALETTE = [(0, 0, 0), (0, 255, 0), (0, 255, 255), (125, 255, 12), (255, 55, 0), (24, 55, 125),
-    #            (187, 155, 25), (0, 255, 125), (255, 255, 125), (123, 15, 175), (124, 155, 5), (12, 255, 141)]
-
-    """for TME"""
+    TME means MILS in paper
+    for TME
+    """
     CLASSES = ("Background", "Tissue Space", "Ultrasonic Scalpel", "Bipolar Forceps",
                "Intestinal Forceps", "Clip Applier", "Cutting and Closing Instrument", "Suction Instrument")
 
     PALETTE = [ (0, 0, 0),
                 (128, 128, 128),
                 (128, 0, 128),
-                # (128, 128, 0),
                 (0, 128, 128),
-                # (0, 0, 128),
                 (128, 0, 0),
-                # (128, 0, 0),
                 (0, 0, 128),
-                # (0, 128, 128),
                 (128, 128, 0),
                 (0, 128, 0)]
 

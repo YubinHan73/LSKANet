@@ -9,22 +9,6 @@ import cv2
 import time
 import numpy as np
 import os
-#
-#
-# def save_image(tensor):
-#     dir = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new/bm/'
-#     featmap = tensor.cpu().clone()  # we clone the tensor to not do changes on it
-#     feat_map = torch.mean(featmap, dim=0)
-#     norm_img = np.zeros(feat_map.shape)
-#     norm_img = cv2.normalize(feat_map, norm_img, 0, 255, cv2.NORM_MINMAX)
-#     norm_img = np.asarray(norm_img, dtype=np.uint8)
-#     image = image.squeeze(0)  # remove the fake batch dimension
-#     image = unloader(image)
-#     if not os.exists(dir):
-#         os.makedirs(dir)
-#     image.save('results_{}.jpg'
-#                .format(num, para['style_weight'], para['content_weight'], para['lr'], para['epoch'],
-#                        para['style_loss'], para['content_loss']))
 
 @HEADS.register_module()
 class BGHead(FCNHead):

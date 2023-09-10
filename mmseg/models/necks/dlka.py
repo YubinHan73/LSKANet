@@ -175,48 +175,6 @@ class LSKAttention(BaseModule):
         x_ana = self.ana_block(x)
         x_ana = self.proj_2(x_ana)
 
-        # x_fea_in = torch.cat((shorcut, x_ins, x_ana), dim=0)
-        # x_fea_out = class_highlight_heatmap(x_fea_in.cpu(), labels=label, highlight_class=[0, 4, 5, 6], out_shape=None, cmap='bwr', rgb=True)
-        # x_fea_outs = torch.split(x_fea_out, 1, dim=0)
-        # array_x = np.transpose(np.squeeze(x_fea_outs[0].numpy()), (1, 2, 0))
-        # array_x_ins = np.transpose(np.squeeze(x_fea_outs[1].numpy()), (1, 2, 0))
-        # array_x_ana = np.transpose(np.squeeze(x_fea_outs[0].numpy()), (1, 2, 0))
-
-        # cam_x = class_highlight_heatmap(shorcut.cpu(), labels=label, highlight_class=[0, 4, 5, 6], out_shape=None, cmap='bwr', rgb=True)
-        # array_x = cam_x.numpy()
-        # array_x = np.transpose(np.squeeze(array_x), (1, 2, 0))
-        # # image_cam_x =  Image.fromarray(array_x)
-        # # image_cam_x.save('/data2/hyb/SegNetwork_other/SegNeXt-main/tools/test_out/cam_x.png')
-        # #
-        # cam_x_ins = class_highlight_heatmap(x_ins.cpu(), labels=label, highlight_class=[0, 4, 5, 6], out_shape=None, cmap='bwr', rgb=True)
-        # array_x_ins = cam_x_ins.numpy()
-        # array_x_ins= np.transpose(np.squeeze(array_x_ins), (1, 2, 0))
-        # # image_cam_x_ins = Image.fromarray(array_x_ins)
-        # # image_cam_x_ins.save('/data2/hyb/SegNetwork_other/SegNeXt-main/tools/test_out/cam_x_ins.png')
-        # #
-        # cam_x_ana = class_highlight_heatmap(x_ana.cpu(), labels=label, highlight_class=[0, 4, 5, 6], out_shape=None, cmap='bwr', rgb=True)
-        # array_x_ana = cam_x_ana.numpy()
-        # array_x_ana = np.transpose(np.squeeze(array_x_ana), (1, 2, 0))
-        # # image_cam_x_ana = Image.fromarray(array_x_ana)
-        # # image_cam_x_ana.save('/data2/hyb/SegNetwork_other/SegNeXt-main/tools/test_out/cam_x_ana.png')
-        #
-        # fig, axes = plt.subplots(1, 3)
-        # axes[0].imshow(array_x)
-        # axes[0].axis('off')
-        # axes[0].set_title('Image 1')
-        #
-        # axes[1].imshow(array_x_ins)
-        # axes[1].axis('off')
-        # axes[1].set_title('Image 2')
-        #
-        # axes[2].imshow(array_x_ana)
-        # axes[2].axis('off')
-        # axes[2].set_title('Image 3')
-        #
-        # # 调整子图之间的间距
-        # plt.tight_layout()
-        # plt.show()
-        #
         x = shorcut + x_ins + x_ana
         return x
 

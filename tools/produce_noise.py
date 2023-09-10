@@ -147,10 +147,10 @@ def liangdu(img):
 if __name__ == '__main__':
 
     """edv2018"""
-    # image_path = "/data2/hyb/DataSurgery/endovis2018_train2235_val997_test997/leftImg8bit/test/"
-    # # new_path = "/data2/hyb/DataSurgery/endovis2018_train2235_val997_test997/leftImg8bit/testmotionblur/"
-    # # new_path = "/data2/hyb/DataSurgery/endovis2018_train2235_val997_test997/leftImg8bit/testjiawu/"
-    # new_path = "/data2/hyb/DataSurgery/endovis2018_train2235_val997_test997/leftImg8bit/test_motionblur_jiawu/"
+    # image_path = "/data2/hyb/DataSurgery/endovis2018/leftImg8bit/test/"
+    # # new_path = "/data2/hyb/DataSurgery/endovis2018/leftImg8bit/testmotionblur/"
+    # # new_path = "/data2/hyb/DataSurgery/endovis2018/leftImg8bit/testjiawu/"
+    # new_path = "/data2/hyb/DataSurgery/endovis2018/leftImg8bit/test_motionblur_jiawu/"
     # if not os.path.isdir(new_path):
     #     os.mkdir(new_path)
     # test_dirs = [os.path.join(image_path, "seq{}test".format(i)) for i in range(1, 5)]

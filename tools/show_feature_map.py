@@ -28,8 +28,8 @@ from mmengine import Config
 from mmengine.registry import init_default_scope
 from mmseg.registry import MODELS
 
-config = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new.py'
-checkpoint = '/data2/hyb/SegNetwork_other/SegNeXt-main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new/best_mIoU_epoch_108.pth'
+config = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/work_dirs/0_LSKANet/LSKANet_cadist3.py'
+checkpoint = '/data2/hyb/SegNetwork_other/LSKANet_main/tools/work_dirs/0_LSKANet/LSKANet_hr48_cadist3_new/best_mIoU_epoch_108.pth'
 img_path = '/data2/hyb/DataSurgery/CaDIS_train3550_val534_test586_task3/leftImg8bit/test/Video22/Video22_frame019920_leftImg8bit.png'
 label_path = img_path.replace('leftImg8bit', 'gtFine').split('.')[0] + '_labelIds.png'
 transform = transforms.Compose([transforms.ToTensor()])

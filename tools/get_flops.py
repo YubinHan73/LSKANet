@@ -12,7 +12,7 @@ from torchprofile import profile_macs
 def parse_args():
     parser = argparse.ArgumentParser(description='Get the FLOPs of a segmentor')
     parser.add_argument('--config',
-                        default='/data2/hyb/SegNetwork_other/SegNeXt-main/'
+                        default='/data2/hyb/SegNetwork_other/LSKANet_main/'
                                 'tools/work_dirs/0_LSKANet/LSKANet_mv2_cadist3.py',
                         help='train config file path')
     parser.add_argument(

@@ -24,11 +24,11 @@ def parse_args():
     parser = argparse.ArgumentParser(
         description='mmseg test (and eval) a model')
     parser.add_argument('--config',
-                        default='/data2/hyb/SegNetwork_other/SegNeXt-main/'
+                        default='/data2/hyb/SegNetwork_other/LSKANet_main/'
                                 'tools/work_dirs/segformer_b2/segformer_b2_cadist3.py',
                         help='test config file path')
     parser.add_argument('--checkpoint',
-                        default='/data2/hyb/SegNetwork_other/SegNeXt-main/'
+                        default='/data2/hyb/SegNetwork_other/LSKANet_main/'
                                 'tools/work_dirs/segformer_b2/segformer_b2_cadist3/best_mIoU_epoch_150.pth',
                         help='checkpoint file')
     parser.add_argument(
