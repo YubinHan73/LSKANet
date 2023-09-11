@@ -159,7 +159,7 @@ lr_config = dict(
     power=1.0,
     min_lr=0.0,
     by_epoch=False)
-runner = dict(type='EpochBasedRunner', max_epochs=250)
+runner = dict(type='EpochBasedRunner', max_epochs=200)
 checkpoint_config = dict(by_epoch=True, interval=10, max_keep_ckpts=20)
 evaluation = dict(interval=5, metric='mIoU', save_best='mIoU')
 work_dir = './work_dirs/0_LSKANet/LSKANet_edv2018'
