@@ -42,8 +42,8 @@ Before training, please download the dataset you need and rename them following 
 1. Use `python test.py` to start the inferencing
 2. Visualization results can be found in `/tools/test_out/`
 
-## Notes
-We build our code on [MMsegmentation](https://github.com/open-mmlab/mmsegmentation). Thanks a lot!
+## Acknowledgements
+We build our code on [MMsegmentation](https://github.com/open-mmlab/mmsegmentation). Thanks original authors for their impressive work!
 
 ## Questions
 For further question about the code or paper, please contact Yubin Han:15073176834@163.com.
