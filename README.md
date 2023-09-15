@@ -46,4 +46,4 @@ Before training, please download the dataset you need and rename them following 
 We build our code on [MMsegmentation](https://github.com/open-mmlab/mmsegmentation). Thanks original authors for their impressive work!
 
 ## Questions
-For further question about the code or paper, please contact Yubin Han:15073176834@163.com.
+For further question about the code or paper, please contact Yubin Han:hyb_hnu@163.com.
